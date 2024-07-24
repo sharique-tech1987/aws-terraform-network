@@ -248,7 +248,7 @@ resource "aws_lb" "vpro_web_elb" {
   security_groups    = [aws_security_group.web_elb_sg.id]
   subnets            = [aws_subnet.vpro_pubsub_1.id, aws_subnet.vpro_pubsub_2.id]
 
-  enable_deletion_protection = true
+  enable_deletion_protection = false
 
   tags = {
     Environment = "staging"
