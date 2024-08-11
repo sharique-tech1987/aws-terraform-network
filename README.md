@@ -36,7 +36,9 @@ terraform plan
 terraform apply
 ```
 ## Improvements
-![Improve Infrastructure Diagram](./HighAvailability.02.png)  
+<p align="center">
+  <img src="./HighAvailability.02.png" alt="Improve Infrastructure Diagram  " />
+</p>
 
 To enhance the security of our network, we can add private subnets and move our EC2 instances into these subnets. However, since instances in private subnets are not directly accessible from the internet, it is necessary to create a NAT Gateway to enable outbound internet access.
 
