@@ -25,6 +25,9 @@ This demonstration highlights high availability through the creation of key AWS 
 </p>
 
 ## How to use this example project
+* Create a folder named keys on the root of the folder.
+* Generate 2 keys namely web01key and web02key using ssh-keygen.
+* Put them in the keys folder.
 * Setup AWS CLI.
 * Generate keys on AWS to use with AWS CLI.
 * Install terraform.
