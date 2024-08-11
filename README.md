@@ -20,8 +20,9 @@ This demonstration highlights high availability through the creation of key AWS 
 14. Provision the EC2 instances using the web.sh script, which installs the __httpd__ service on Ubuntu, creates an __index.html__ file in the __var/www/html__ directory, and writes instance metadata to the __index.html__.
 
 ## Infrastructure Diagram
-![Infrastructure Diagram](./HighAvailability.01.png)
-
+<p align="center">
+  <img src="./HighAvailability.01.png" alt="Infrastructure Diagram" />
+</p>
 
 ## How to use this example project
 * Setup AWS CLI.
@@ -37,7 +38,7 @@ terraform apply
 ```
 ## Improvements
 <p align="center">
-  <img src="./HighAvailability.02.png" alt="Improve Infrastructure Diagram  " />
+  <img src="./HighAvailability.02.png" alt="Improve Infrastructure Diagram" />
 </p>
 
 To enhance the security of our network, we can add private subnets and move our EC2 instances into these subnets. However, since instances in private subnets are not directly accessible from the internet, it is necessary to create a NAT Gateway to enable outbound internet access.
