@@ -36,7 +36,8 @@ terraform plan
 terraform apply
 ```
 ## Improvements
-![Improve Infrastructure Diagram](./HighAvailability.02.png)
+![Improve Infrastructure Diagram](./HighAvailability.02.png)  
+
 To enhance the security of our network, we can add private subnets and move our EC2 instances into these subnets. However, since instances in private subnets are not directly accessible from the internet, it is necessary to create a NAT Gateway to enable outbound internet access.
 
 Utilizing auto-scaling groups to launch instances adds scalability to the network, automatically adjusting resources based on demand. This approach enhances performance, maintains availability, and optimizes cost efficiency by scaling up or down as needed.
